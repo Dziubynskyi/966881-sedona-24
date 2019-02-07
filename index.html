@@ -20,7 +20,7 @@
   </header>
   <main class="container">
   	<h1 class="visually-hidden">Sedona</h1>
-    <img src="intro-welcome.svg" width="368" height="153" alt="Надпись седона как картинка">
+    <img src="img/intro-welcome.svg" width="458" height="352" alt="Надпись седона как картинка">
   	 <section class=feature>
   		<h2>Седона - небольшой городок в аризоне заслуживающий большего</h2>
   		<p>Рассмотрим 5 причин по которым седона круче, чем гранд каньон</p>
@@ -30,21 +30,45 @@
   		<p>Укажите нам предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
   	 	<button type="button">Поиск гостиницы в седоне</button>
   	 	<!-- здесь будет форма -->
-  	 	<!-- кнопка найти это <button> или <a>???? -->
+  	 	<form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+           <label for="arrival-date">Дата заезда</label>
+           <input id="arrival-date" type="text" name="arrival"  placeholder="Дата заезда">
+           <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+        </p>
+        <p>
+           <label for="departure-date">Дата выезда</label>
+           <input id="departure-date" type="text" name="departure"  placeholder="Дата выезда">
+           <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+        </p>
+        <p>
+           <label for="adults">Взрослые</label>
+           <button type="button">-</button>
+           <input id="adults" type="text" name="adults">
+           <button type="button">+</button>
+        </p>
+        <p>
+           <label for="children">Дети</label>
+           <button type="button">-</button>
+           <input id="children" type="text" name="children">
+           <button type="button">+</button>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
   	 </section>
   </main>
   <footer class="main-footer">
   	<b class="footer-visit">#visitsedona</b>
-  	 	<div class="footer-social">
- 		   <ul>
+ 		   <ul class="footer-social">
  			  <li><a class="social-button" href="#">Твиттер</a></li>
  			  <li><a class="social-button" href="#">Фейсбук</a></li>
  			  <li><a class="social-button" href="#">Ютуб</a></li>
  		  </ul>
- 	   </div>
  	<p class="footer-copyright">
-    	     <span>Website by HTML academy</span>>
-    	     <a class="button" href="https://up.htmlacademy.ru">HTML academy</a>
+    	     <span>Website by HTML academy</span>
+    	     <a class="button" href="https://up.htmlacademy.ru">
+             <img src="img/logo-htmlacademy.svg" width="368" height="153">
+           </a>
     </p>
   </footer>
   </body>
