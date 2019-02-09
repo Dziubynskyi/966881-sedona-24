@@ -8,11 +8,12 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  
   background-color: #FFFFFF;
-  background-image: url("../img/background.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+}
+.intro{
+   background-image: url("../img/background.jpg");
+   background-position: top center;
+   background-repeat: no-repeat;
 }
 
 a{
@@ -35,9 +36,14 @@ a{
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
+.site-navigation a:focus
 {
   background-color: #abcce1;
+}
+
+.site-navigation a:active
+{
+  background-color: #5496bd;
 }
 
 .footer-social {
@@ -45,7 +51,8 @@ a{
 }
 
 .search-button,
-.social-button{
+.social-button,
+.button-more{
   font: inherit;
   text-align: center;
   color: #FFFFFF;
@@ -55,7 +62,8 @@ a{
   border: none;
 }
 
-.hotel-search-button{
+.hotel-search-button,
+.button-order{
   font: inherit;
   text-align: center;
   color: #FFFFFF;
