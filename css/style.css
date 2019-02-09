@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #FFFFFF;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+{
+  background-color: #abcce1;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.search-button,
+.social-button{
+  font: inherit;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #81b3d2;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.hotel-search-button{
+  font: inherit;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #766357;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+ input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+

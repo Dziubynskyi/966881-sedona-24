@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+       <link href="css/normalize.css" rel="stylesheet">
+       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
   	 <nav class="main-navigation">
   	   <a class="main-header-logo">
  		 <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Sedona">
+     </a>
  	   </a>
   	   <ul class="site-navigation">
   			<li><a href="information.html">Информация</a></li>
@@ -28,7 +32,7 @@
   	 <section class="got-interested-hotel-search">
   		<h2>Заинтерисовались ?</h2>
   		<p>Укажите нам предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-  	 	<button type="button">Поиск гостиницы в седоне</button>
+  	 	<button type="button" class="hotel-search-button">Поиск гостиницы в седоне</button>
   	 	<!-- здесь будет форма -->
   	 	<form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
         <p>
@@ -53,7 +57,7 @@
            <input id="children" type="text" name="children">
            <button type="button">+</button>
         </p>
-        <button type="submit">Найти</button>
+        <button type="submit" class="search-button">Найти</button>
       </form>
   	 </section>
   </main>
