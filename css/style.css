@@ -12,6 +12,7 @@ body {
 }
 .intro{
    background-image: url("../img/background.jpg");
+   background-size: 1200px 773px;
    background-position: top center;
    background-repeat: no-repeat;
 }
@@ -73,9 +74,37 @@ a{
   border: none;
 }
 
- input {
+ .general-input {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
 }
 
+.main-header{
+  width: 1200;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-header-logo{
+  position: absolute;
+  left: 700px;
+}
+
+.site-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature{
+ text-align: center;
+}
+
+.block-real-town{
+  display: flex;
+  justify-content: space-between;
+}
+
+.real-town{
+text-align: center;
+}
