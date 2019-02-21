@@ -10,11 +10,26 @@ body {
   text-transform: uppercase;
   background-color: #FFFFFF;
 }
-.intro{
+
+/*.intro{
    background-image: url("../img/background.jpg");
    background-size: 1200px 773px;
    background-position: top center;
    background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}*/ 
+
+.intro {
+  width: 1200px;
+  height: 773px;
+  background: url('../img/backround_2.png') no-repeat, url('../img/background.jpg');
+  background-position: left bottom, left center;
+  background-size: 1201px 59px, 1200px 773px;
+  justify-content: center;
+  display: flex;
+}
 }
 
 a{
@@ -39,12 +54,12 @@ a{
 .site-navigation a:hover,
 .site-navigation a:focus
 {
-  background-color: #abcce1;
+  color: #abcce1;
 }
 
 .site-navigation a:active
 {
-  background-color: #5496bd;
+  color: #5496bd;
 }
 
 .footer-social {
@@ -61,6 +76,13 @@ a{
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+}
+
+.search-button{
+ padding: 16px 195px;
+}
+.hotel-search-button{
+  padding: 33px 140px;
 }
 
 .hotel-search-button,
@@ -81,19 +103,20 @@ a{
 }
 
 .main-header{
-  width: 1200;
-  margin: 0 auto;
   position: relative;
 }
 
 .main-header-logo{
   position: absolute;
-  left: 700px;
+  left: 50%;
+  margin-left: -70px;
 }
 
 .site-navigation{
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .feature{
@@ -102,9 +125,113 @@ a{
 
 .block-real-town{
   display: flex;
+}
+
+.real-town,
+.devil-bridge{
+  text-align: center; /*выравнивание по центру по горизонтале*/
+  vertical-align: middle; /*выравнивание по центру по вернтикале*/
+  padding: 40px 50px; /* для ссылок отступы сверху_снизу && справа_слева*/
+  background-color: #abcce1;
+}
+
+.general-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%
+  height:auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 15px 50px; /* для ссылок отступы сверху_снизу && справа_слева*/
+  vertical-align: middle;
+}
+
+
+.features-list,
+.features-list-second{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center; /*выравнивание по центру по горизонтале*/
+  vertical-align: middle; /*выравнивание по центру по вернтикале*/
+  padding: 70px 50px; /* для ссылок отступы сверху_снизу && справа_слева*/
+}
+
+.block-devil-bridge{
+  display: flex;
+}
+
+.features-list-second{
+  display: flex;
+  background-color: #eeeeee;
+}
+
+.interested{
+  text-align: center; /*выравнивание по центру по горизонтале*/
+  vertical-align: middle;
+}
+
+
+.features h3{
+  position: relative;
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-list h3::before {
+  position: absolute;
+  bottom:70px;
+  left:50%;
+  margin-left:-35px;
+  width: 50px;
+  height: 50px;
+}
+
+.features-list .feature-item:nth-child(1) > h3::before {
+  content: url("../img/icon-1.svg");
+}
+
+.features-list .feature-item:nth-child(2) > h3::before {
+  content: url("../img/icon-2.svg");
+}
+
+.features-list .feature-item:nth-child(3) > h3::before {
+  content: url("../img/icon-3.svg");
+}
+
+.hotel-search{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.real-town{
-text-align: center;
+.from-item{
+  width: 140px;
 }
+
