@@ -97,25 +97,29 @@
       <p>Укажите нам предполагаемые даты поездки <br>  и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </div>
       <button type="button" class="hotel-search-button">Поиск гостиницы в седоне</button>
+      <div class="map-frame">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d74078.16821524662!2d-111.76579004773627!3d34.86066341666826!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1472664689789" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
+</div>
       <!-- здесь будет форма -->
       <form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
-        <p class="from-item">
+        <p class="from-item  item-fat">
           <label for="arrival-date">Дата заезда</label>
           <input class="general-input" id="arrival-date" type="text" name="arrival" placeholder="Дата заезда">
           <button class="button-calendar" type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
         </p>
-        <p class="from-item">
+        <p class="from-item  item-fat">
           <label for="departure-date">Дата выезда</label>
           <input class="general-input" id="departure-date" type="text" name="departure" placeholder="Дата выезда">
           <button class="button-calendar" type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
         </p>
-        <p class="from-item">
+        <p class="from-item  item-thin">
           <label for="adults">Взрослые</label>
           <button type="button">-</button>
           <input class="general-input" id="adults" type="text" name="adults">
           <button type="button">+</button>
         </p>
-        <p class="from-item">
+        <p class="from-item  item-thin">
           <label for="children">Дети</label>
           <button type="button">-</button>
           <input class="general-input" id="children" type="text" name="children">
