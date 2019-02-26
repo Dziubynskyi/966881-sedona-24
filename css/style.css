@@ -5,7 +5,7 @@ body {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -23,9 +23,9 @@ body {
 
 .intro {
   width: 1200px;
-  height: 773px;
-  background: url('../img/backround_2.png') no-repeat, url('../img/background.jpg');
-  background-position: left bottom, left center;
+  height: 500px;
+  background: url('../img/intro-mask.svg') no-repeat, url('../img/background.jpg');
+  background-position: left 101%, left center;
   background-size: 1201px 59px, 1200px 773px;
   justify-content: center;
   display: flex;
@@ -83,6 +83,7 @@ a{
 }
 .hotel-search-button{
   padding: 33px 140px;
+  width: 500px;
 }
 
 .hotel-search-button,
@@ -143,6 +144,7 @@ a{
 img{
   max-width: 100%
   height:auto;
+  display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -180,6 +182,9 @@ input[type="radio"].visually-hidden {
   text-align: center; /*выравнивание по центру по горизонтале*/
   vertical-align: middle; /*выравнивание по центру по вернтикале*/
   padding: 70px 50px; /* для ссылок отступы сверху_снизу && справа_слева*/
+}
+.features-list-second{
+  margin: 0;
 }
 
 .block-devil-bridge{
@@ -229,9 +234,43 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 500px;
+  /*position: absolute;  временно !!!! */
+  background-color: white;
+  top: 250px;
+  left: 50%;
+  margin-left: -250px;
 }
 
 .from-item{
   width: 140px;
 }
+
+.got-interested-hotel-search{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.from-item{
+  position: relative;
+}
+
+.button-calendar{
+  position: absolute;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social,
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+}
+
+
 
